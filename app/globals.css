@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body{
   @apply flex items-center flex-col content-center;
 }
+
+@import '../assets/css/loader.module.css';
 
 header{
   width: 65vw;

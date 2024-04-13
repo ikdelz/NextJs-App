@@ -1,7 +1,11 @@
 import Link from "next/link";
 
 const getPosts = async() => {
-  const res = await fetch("https://dummyjson.com/posts");
+  const res = await fetch("https://dummyjson.com/posts", {
+    next: {
+      revalidate: 600,
+    },
+  });
 
   return res.json()
 }

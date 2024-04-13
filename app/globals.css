@@ -2,6 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-.h1{
-  @apply p-3 my-5 font-bold text-blue-400;
+body{
+  @apply flex items-center flex-col content-center;
+}
+
+header{
+  width: 65vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: azure;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgb(185, 185, 185);
+  margin-top: 20px;
+}
+
+.logo{
+  @apply text-red-300 font-semibold cursor-pointer;
+}
+
+.nav{
+  @apply flex items-center content-center;
+}
+
+.nav-link{
+  @apply px-4 py-2 font-bold text-blue-400 underline text-sm;
+}
+
+.heading{
+  @apply font-bold text-red-300 text-lg;
+}
+
+.app{
+  @apply flex flex-col content-start items-start 
+  shadow-md p-4 mt-5 rounded-sm w-custom-65vw;
+}
+
+.posts{
+  @apply grid grid-cols-2 gap-5 mt-4;
+}
+
+.post {
+  @apply bg-slate-50 p-2 rounded-sm shadow-sm;
+}
+
+.post h3{
+  @apply font-bold opacity-50;
+}
+
+.post p{
+  @apply font-light text-sm;
 }

@@ -47,12 +47,19 @@ header{
 
 .post {
   @apply bg-slate-50 p-2 rounded-sm shadow-sm;
+
+  h3 {
+    @apply font-bold opacity-50;
+  }
+  p {
+    @apply font-light text-sm;
+  }
 }
 
-.post h3{
-  @apply font-bold opacity-50;
-}
+.create {
+  @apply flex flex-col items-start content-center;
 
-.post p{
-  @apply font-light text-sm;
+  form{
+    @apply flex flex-col items-start content-center;
+  }
 }
